@@ -19,8 +19,8 @@
 **Пример кода:** 
 * **Игра "Камень Ножницы Бумага Ящерица Спок"**
   
-  ```cpp
-  #include <iostream>
+```cpp
+#include <iostream>
 #include <Windows.h>
 #include <string>
 #include <ctime>
@@ -42,19 +42,14 @@ string whoWinner(string youChoice, string sheldonChoice) {
       {"спок", "бумага"},     // Ящерица побеждает Спока и Бумагу
       {"камень", "ножницы"}   // Спок побеждает Камень и Ножницы
     };
-
-    // Проверка на ничью
     if (youChoice == sheldonChoice) {
         return "Ничья!\n-ДАВАЙ ЕЩЕ РАЗ!!!!!!!!!";
     }
-
-    // Проверка на победу игрока
     for (int i = 0; i < 2; ++i) {
         if (winnerDict[youChoice[0] - 'а'][i] == sheldonChoice) {
             return "Вы победили!\n-ТАК НЕЧЕСТНО ДАВАЙ ЕЩЕ РАЗ Я ВСЕ РАВНО ТЕБЯ ПОБЕДЮ!!!!!";
         }
     }
-
     return "Шелдон победил!\n-БУГАГАШЕНЬКИ! ХА-ХА";
 }
 
@@ -71,12 +66,10 @@ int main() {
     SetConsoleOutputCP(1251);
     // Инициализация генератора случайных чисел
     srand(time(0));
-
     string youChoice;
     cout << "Введите свой выбор (камень, ножницы, бумага, ящерица, спок): ";
     cin >> youChoice;
     playRound(youChoice);
-
     return 0;
 }
 ```
