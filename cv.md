@@ -13,9 +13,8 @@
 
 **Навыки:**
 
-* **Языки программирования:** C++, C#, JavaScript, HTML, CSS
+* **Языки программирования:** C++, C#, Java, JavaScript, HTML, CSS
 * **Инструменты разработки:** Visual Studio, Visual Studio Code, CodeBlocks, Git, IntelliJ IDEA
-
 
 **Опыт:**
 
@@ -34,3 +33,4 @@
 
 * **Описание:** Это моё CV, которое я разработала, используя Markdown.
 * **Ссылка на код:** https://github.com/qwergjgb/rsschool-cv.git
+
